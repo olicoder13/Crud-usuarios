@@ -1,0 +1,45 @@
+.list__container{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list__container li{
+  margin: 5px;
+}
+
+.btn_card_user{
+  margin: 0 5px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: rgb(252, 252, 247);
+}
+
+.card{
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 14px;
+    color: #000;
+}
+
+.title__card{
+    margin: 0;
+    color: #000;
+}
+
+@media (min-width: 540px) {
+  .card{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100;
+    gap: 10px;
+  }
+
+  .btn_card_user{
+    padding: 10px 15px;
+    border-radius: 15px;
+  }
+  
+}
