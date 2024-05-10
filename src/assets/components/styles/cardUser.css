@@ -5,28 +5,42 @@
 }
 
 .list__container li{
-  margin: 5px;
+  margin: 10px;
+}
+.list__container li span{
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .btn_card_user{
   margin: 0 5px;
-  padding: 10px 15px;
+  padding: 15px 25px;
   border-radius: 15px;
   background-color: rgb(252, 252, 247);
+  color: #0075fb;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.btn_card_user:hover{
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .card{
-    padding: 20px 10px;
-    margin-bottom: 20px;
+    border: 5px solid #0075fb;
+    background-color: #9ef7c6;
+    padding: 20px;
     text-align: center;
-    background-color: #fff;
     border-radius: 14px;
-    color: #000;
+    max-width: 430px;
+    margin-bottom: 30px;
 }
 
 .title__card{
+    font-size: 1.5rem;
+    color: #4e05f9;
     margin: 0;
-    color: #000;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 540px) {

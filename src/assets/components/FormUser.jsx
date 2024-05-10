@@ -31,6 +31,13 @@ const FormUser = ({createUser, editUser, updateUser, setEditUser, isOpen, setIsO
 
     const handleClose = () =>{
         setIsOpen(!isOpen);
+        reset({
+            email: '',
+            password: '',
+            first_name: '',
+            last_name: '',
+            birthday: ''
+        });
     }
   return (
     <div className={`form__background ${isOpen&&'able'}`}>
@@ -38,7 +45,7 @@ const FormUser = ({createUser, editUser, updateUser, setEditUser, isOpen, setIsO
             <div onClick={handleClose} className='form__close'>
                 <ion-icon name="trash-outline"></ion-icon>
             </div>
-            <h2>Nuevo Usuario</h2>
+            <h2 className='form__title'>Nuevo Usuario</h2>
             <div className='form__item'>
                 <label htmlFor="email">Email: </label>
                 <input className='input' {...register('email')} id='email' type="text" />
